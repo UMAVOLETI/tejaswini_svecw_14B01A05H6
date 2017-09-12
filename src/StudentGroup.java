@@ -129,7 +129,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void remove(Student student) {
 		// Add your implementation here
-		try {
+		/*try {
 			if(student == null)
 				throw new IllegalArgumentException();
 			int i;
@@ -142,13 +142,13 @@ public class StudentGroup implements StudentArrayOperation {
 		}
 		catch(IllegalArgumentException iae) {
 			iae.getStackTrace();
-		}
+		}*/
 	}
 
 	@Override
 	public void removeFromIndex(int index) {
 		// Add your implementation here
-		try {
+		/*try {
 			if(index < 0 || index > students.length - 1)
 				throw new IllegalArgumentException();
 			int i;
@@ -157,14 +157,13 @@ public class StudentGroup implements StudentArrayOperation {
 		}
 		catch(IllegalArgumentException iae) {
 			iae.getStackTrace();
-		}
-		
+		}*/
 	}
 
 	@Override
 	public void removeFromElement(Student student) {
 		// Add your implementation here
-		try {
+		/*try {
 			if(student == null)
 				throw new IllegalArgumentException();
 			int i;
@@ -178,13 +177,13 @@ public class StudentGroup implements StudentArrayOperation {
 		}
 		catch(IllegalArgumentException iae) {
 			iae.getStackTrace();
-		}
+		}*/
 	}
 
 	@Override
 	public void removeToIndex(int index) {
 		// Add your implementation here
-		try {
+		/*try {
 			if(index < 0 || index > students.length - 1)
 				throw new IllegalArgumentException();
 			int i;
@@ -195,13 +194,13 @@ public class StudentGroup implements StudentArrayOperation {
 		}
 		catch(IllegalArgumentException iae) {
 			iae.getStackTrace();
-		}
+		}*/
 	}
 
 	@Override
 	public void removeToElement(Student student) {
 		// Add your implementation here
-		try {
+		/*try {
 			if(student == null)
 				throw new IllegalArgumentException();
 			int i, j;
@@ -217,7 +216,7 @@ public class StudentGroup implements StudentArrayOperation {
 		}
 		catch(IllegalArgumentException iae) {
 			iae.getStackTrace();
-		}
+		}*/
 	}
 
 	@Override
