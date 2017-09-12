@@ -241,13 +241,14 @@ public class StudentGroup implements StudentArrayOperation {
 		int length = students.length;
 		Student[] arr = new Student[length];
 		try {
-			int i, j;
+			int i;
 			if(date == null)
 				throw new IllegalArgumentException();
-			for(i = 0, j = 0; i < length - 1; i++) {
+			for(i = 0; i < length - 1; i++) {
 				if(students[i].getBirthDate() == date) {
+					 for(int j = 0; j < length - 1; j++) {
 						 arr[j] = students[i];
-						 j++;
+					 }
 				}
 			}
 		}
