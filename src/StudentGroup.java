@@ -223,12 +223,39 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void bubbleSort() {
 		// Add your implementation here
+		Student temp;
+		for(int i = 0; i < students.length - 2; i++) {
+			for(int j = i + 1; j < students.length - 1; i++) {
+				if(students[i].getId() > students[j].getId()) {
+					temp = students[i];
+					students[i] = students[j];
+					students[j] = temp;
+				}
+			}
+		}
 	}
 
 	@Override
 	public Student[] getByBirthDate(Date date) {
 		// Add your implementation here
-		return null;
+		int length = students.length;
+		Student[] arr = new Student[length];
+		try {
+			int i;
+			if(date == null)
+				throw new IllegalArgumentException();
+			for(i = 0; i < length - 1; i++) {
+				if(students[i].getBirthDate() == date) {
+					 for(int j = 0; j < length - 1; j++) {
+						 arr[j] = students[i];
+					 }
+				}
+			}
+		}
+		catch(IllegalArgumentException iae) {
+			iae.getStackTrace();
+		}
+		return arr;
 	}
 
 	@Override
